@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Domaca sarma",
+        "photo":"no-photo.jpg",
+        "isPrivate":false,
+        "ingredients": [
+            "20 listova kiselog kupusa",
+            "500g mlevenog mesa",
+            "zacin po ukusu"
+        ],
+        "preparationDescription": "<h1>Meso</h1><p>Smešu pomešajte sa mesom i prethodno opranim pirinčem.</p><h1>Zavijanje sarme</h1><p>Kašiku fila stavite na list kupusa, formirajte sarmu, začinite začinskom paprikom, pa zalijte vodom dok ne budu potopljene.</p>",
+        "preparationTime": 120,
+        "numberOfServings": 5,
+        "averageRating":3
+    },
+    {
+        "name": "Kuglice od makarona sa 4 vrste sira",
+        "photo":"no-photo.jpg",
+        "isPrivate":false,
+        "ingredients": [
+            "30g C Makarone 4 Vrste Sira",
+            "1,5 solje brasna",
+            "2 jaja"
+        ],
+        "preparationDescription": "<h1>Kuvanje makarona</h1><p>Makarone skuvajte u slanoj vodi, procedite i ostavite sa strane.</p><h1>C Ideja</h1><p>Sadržaj kesice za C ideju za makarone 4 sira rastvorite u pavlaci i dodajte 300 ml vode, pa dobro umutite da se ne bi stvorile grudvice u toku kuvanja sosa.</p>",
+        "preparationTime": 99,
+        "numberOfServings": 3,
+        "averageRating":4.5
+    },
+    {
+        "name": "Punjeni patlidzan",
+        "photo":"no-photo.jpg",
+        "isPrivate":false,
+        "ingredients": [
+            "1 Patlidžan",
+            "2 Luk",
+            "1 Beli luk",
+            "50g Parmezan"
+        ],
+        "preparationDescription": "<h1>Patlidžan i luk</h1><p>Isecite i očistite patlidžan i iseckajte beli luk.</p><h1>Pečenje patlidžana</h1><p>Premažite patlidžan maslinovim uljem i pecite 20 minuta u rerni zagrejanoj na 150 stepeni.</p>",
+        "preparationTime": 45,
+        "numberOfServings": 4,
+        "averageRating":5
+    }
+]
