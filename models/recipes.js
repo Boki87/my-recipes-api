@@ -44,6 +44,11 @@ const RecipeSchema = new mongoose.Schema({
         type: mongoose.Schema.ObjectId,
         ref: 'Category',
         required: true
+    },
+    user: {
+        type: mongoose.Schema.ObjectId,
+        ref: 'User',
+        required: true
     }
 })
 

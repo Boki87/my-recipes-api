@@ -120,6 +120,11 @@ exports.getRecipe = asyncHandler(async (req, res, next) => {
 // @access      Private
 exports.createRecipe = asyncHandler(async (req, res, next) => {
 
+        //add user to req.body
+        //we have req.user already set in our auth middleware (protect)
+        req.body.user = req.user.id
+
+
         var recipe = await Recipe.create(req.body)
     
         res.status(201).json({
