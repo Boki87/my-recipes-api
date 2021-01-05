@@ -1,8 +1,10 @@
 [
     {
+        "_id":"5fed96280cdee1b0ba8ac72c",
         "name": "Domaca sarma",
         "photo":"no-photo.jpg",
         "isPrivate":false,
+        "category":"5fefad08963719249d11ebf5",
         "ingredients": [
             "20 listova kiselog kupusa",
             "500g mlevenog mesa",
@@ -14,9 +16,11 @@
         "averageRating":3
     },
     {
+        "_id":"5fed96280cdee1b0ba8ac72d",
         "name": "Kuglice od makarona sa 4 vrste sira",
         "photo":"no-photo.jpg",
         "isPrivate":false,
+        "category":"5fefad08963719249d11ebf6",
         "ingredients": [
             "30g C Makarone 4 Vrste Sira",
             "1,5 solje brasna",
@@ -28,9 +32,11 @@
         "averageRating":4.5
     },
     {
+        "_id":"5fed96280cdee1b0ba8ac72e",
         "name": "Punjeni patlidzan",
         "photo":"no-photo.jpg",
         "isPrivate":false,
+        "category":"5fefad08963719249d11ebf5",
         "ingredients": [
             "1 Patlidžan",
             "2 Luk",

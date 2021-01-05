@@ -1,0 +1,34 @@
+[
+    {        
+        "_id":"5fefad08963719249d11ebf3",
+        "name":"Soup"        
+    },
+    {        
+        "_id":"5fefad08963719249d11ebf4",
+        "name":"Salad"        
+    },
+    {        
+        "_id":"5fefad08963719249d11ebf5",
+        "name":"Main course"        
+    },
+    {        
+        "_id":"5fefad08963719249d11ebf6",
+        "name":"Side dish"        
+    },
+    {        
+        "_id":"5fefad08963719249d11ebf7",
+        "name":"Dessert"        
+    },
+    {        
+        "_id":"5fefad08963719249d11ebf8",
+        "name":"Snack"        
+    },
+    {        
+        "_id":"5fefad08963719249d11ebf9",
+        "name":"Breakfast"        
+    },
+    {        
+        "_id":"5fefad08963719249d11ebfa",
+        "name":"Beverage"        
+    }
+]
