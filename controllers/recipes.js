@@ -124,9 +124,8 @@ exports.createRecipe = asyncHandler(async (req, res, next) => {
         //we have req.user already set in our auth middleware (protect)
         req.body.user = req.user.id
 
-
         var recipe = await Recipe.create(req.body)
-    
+
         res.status(201).json({
             success: true,
             data: recipe
@@ -140,15 +139,22 @@ exports.createRecipe = asyncHandler(async (req, res, next) => {
 // @access      Private
 exports.updateRecipe = asyncHandler(async (req, res, next) => {
     
-        const recipe = await Recipe.findByIdAndUpdate(req.params.id, req.body, {
-            new: true,
-            runValidators: true
-        })
+        let recipe = await Recipe.findById(req.params.id)
     
         if(!recipe) {
             return next(new ErrorResponse(`Recipe not found with id of ${req.params.id}`, 404)) //error when id does not exist 
         }
     
+        //make sure user is recipe owner
+        if(recipe.user.toString() !== req.user.id && req.user.role !== 'admin') {
+            return next(new ErrorResponse(`User ${req.user.id} is not authorized to update this recipe`, 401)) 
+        }
+
+        recipe = await Recipe.findOneAndUpdate(req.params.id, req.body, {
+            new: true,
+            runValidators: true
+        })
+
         res.status(201).json({
             success: true,
             data: recipe
@@ -162,12 +168,19 @@ exports.updateRecipe = asyncHandler(async (req, res, next) => {
 // @access      Private
 exports.deleteRecipe = asyncHandler(async (req, res, next) => {
     
-        const recipe = await Recipe.findByIdAndDelete(req.params.id)
+        let recipe = await Recipe.findById(req.params.id)
     
         if(!recipe) {
             return next(new ErrorResponse(`Recipe not found with id of ${req.params.id}`, 404)) //error when id does not exist 
         }
     
+         //make sure user is recipe owner
+         if(recipe.user.toString() !== req.user.id && req.user.role !== 'admin') {
+            return next(new ErrorResponse(`User ${req.user.id} is not authorized to delete this recipe`, 401)) 
+        }
+
+        recipe.remove()
+
         res.status(201).json({
             success: true,
             data: {}
@@ -223,8 +236,5 @@ exports.recipeUploadPhoto = asyncHandler(async (req, res, next) => {
         })
 
     })
-
-
-    console.log(req.files);
 
 })
