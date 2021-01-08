@@ -7,8 +7,8 @@ const Recipe = require('../models/recipes')
 // @route       POST /api/v1/recipes/:recipeId/rating
 // @access      Public
 
-exports.getRecipes = asyncHandler(async (req, res, next) => {
-
+exports.addRating = asyncHandler(async (req, res, next) => {
+    
     req.body.recipe = req.params.recipeId
     req.body.user = req.user.id
 
@@ -16,7 +16,7 @@ exports.getRecipes = asyncHandler(async (req, res, next) => {
 
     if(!recipe) {
         return next( new ErrorResponse(`No recipe found with id of: ${req.params.recipeId}`,404))        
-    }
+    }    
 
     const rating = Rating.create(req.body)
 

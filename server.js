@@ -18,6 +18,7 @@ connectDB()
 //route files
 const recipes = require('./routes/recipes')
 const categories = require('./routes/categories')
+
 const auth = require('./routes/auth')
 
 const app = express()
@@ -32,6 +33,8 @@ app.use(cookieParser())
 if(process.env.NODE_ENV == 'development') {
     app.use(morgan('dev'))
 }
+
+
 
 
 //File upload

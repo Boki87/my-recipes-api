@@ -1,7 +1,7 @@
 const ErrorResponse = require('../utils/errorResponse')
 
 const errorHandler = (err, req, res, next) => {
-
+    console.log(1111111111, err);
     let error = {...err}
     error.message = err.message
 
@@ -17,8 +17,7 @@ const errorHandler = (err, req, res, next) => {
         const message = `Resource not found with id of ${err.value}`
         error = new ErrorResponse(message, 404)
     }
-
-
+    
     //Mongoose duplicate key error , something exists with the same key in the db
     if(err.code == 11000) { //code for duplicate key
         const message = `Duplicate field value entered`

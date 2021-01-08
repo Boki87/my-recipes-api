@@ -32,7 +32,7 @@ const RecipeSchema = new mongoose.Schema({
     averageRating: {
         type: Number,
         min: [1, 'Rating must be at least 1'],
-        max: [5, 'Rating can not be greater than 5'],
+        max: [5, 'Rating can not be more than 5']
     },
 
     createdAt: {
