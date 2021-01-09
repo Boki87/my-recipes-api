@@ -1,51 +1,115 @@
 [
     {
         "_id":"5fed96280cdee1b0ba8ac72c",
-        "name": "Domaca sarma",
+        "name": "Turkish Eggs",
         "photo":"no-photo.jpg",
-        "isPrivate":false,
+        
         "category":"5fefad08963719249d11ebf5",
         "ingredients": [
-            "20 listova kiselog kupusa",
-            "500g mlevenog mesa",
-            "zacin po ukusu"
+            "1 cup Greek yogurt, at room temperature",
+            "1 clove garlic",
+            "¼ teaspoon salt, or to taste (Optional)"
         ],
-        "preparationDescription": "<h1>Meso</h1><p>Smešu pomešajte sa mesom i prethodno opranim pirinčem.</p><h1>Zavijanje sarme</h1><p>Kašiku fila stavite na list kupusa, formirajte sarmu, začinite začinskom paprikom, pa zalijte vodom dok ne budu potopljene.</p>",
-        "preparationTime": 120,
-        "numberOfServings": 5,
-        "averageRating":3
+        "preparationDescription": "<h1>Step 1</h1><p>Spoon yogurt into a medium bowl. Grate in garlic and mix to combine. Season with salt, pepper, and cayenne. Add dill and mix thoroughly. Set aside at room temperature.</p>",
+        "preparationTime": 25,
+        "numberOfServings": 2
     },
     {
-        "_id":"5fed96280cdee1b0ba8ac72d",
-        "name": "Kuglice od makarona sa 4 vrste sira",
+        "_id":"5fed96280cdee1b0ba8ac72c",
+        "name": "Blueberry Lemon Breakfast Quinoa",
         "photo":"no-photo.jpg",
-        "isPrivate":false,
-        "category":"5fefad08963719249d11ebf6",
-        "ingredients": [
-            "30g C Makarone 4 Vrste Sira",
-            "1,5 solje brasna",
-            "2 jaja"
-        ],
-        "preparationDescription": "<h1>Kuvanje makarona</h1><p>Makarone skuvajte u slanoj vodi, procedite i ostavite sa strane.</p><h1>C Ideja</h1><p>Sadržaj kesice za C ideju za makarone 4 sira rastvorite u pavlaci i dodajte 300 ml vode, pa dobro umutite da se ne bi stvorile grudvice u toku kuvanja sosa.</p>",
-        "preparationTime": 99,
-        "numberOfServings": 3,
-        "averageRating":4.5
-    },
-    {
-        "_id":"5fed96280cdee1b0ba8ac72e",
-        "name": "Punjeni patlidzan",
-        "photo":"no-photo.jpg",
-        "isPrivate":false,
+        
         "category":"5fefad08963719249d11ebf5",
         "ingredients": [
-            "1 Patlidžan",
-            "2 Luk",
-            "1 Beli luk",
-            "50g Parmezan"
+            "1 cup quinoa",
+            "2 cups nonfat milk",
+            "1 pinch salt",
+            "3 tablespoons maple syrup",
+            "½ lemon, zested"
         ],
-        "preparationDescription": "<h1>Patlidžan i luk</h1><p>Isecite i očistite patlidžan i iseckajte beli luk.</p><h1>Pečenje patlidžana</h1><p>Premažite patlidžan maslinovim uljem i pecite 20 minuta u rerni zagrejanoj na 150 stepeni.</p>",
+        "preparationDescription": "<h1>Step 1</h1><p>Rinse quinoa in a fine strainer with cold water to remove bitterness until water runs clear and is no longer frothy.</p><h1>Step 2</h1><p>Heat milk in a saucepan over medium heat until warm, 2 to 3 minutes. Stir quinoa and salt into the milk; simmer over medium-low heat until much of the liquid has been absorbed, about 20 minutes. Remove saucepan from heat. Stir maple syrup and lemon zest into the quinoa mixture. Gently fold blueberries into the mixture.</p><h1>Step 3</h1><p>Divide quinoa mixture between 2 bowls; top each with 1 teaspoon flax seed to serve.</p>",
+        "preparationTime": 5,
+        "numberOfServings": 2
+    },
+    {
+        "_id":"5fed96280cdee1b0ba8ac72c",
+        "name": "Spicy Grilled Cheese Sandwich",
+        "photo":"no-photo.jpg",
+        
+        "category":"5fefad08963719249d11ebf9",
+        "ingredients": [
+            "2 tablespoons butter or margarine",
+            "4 slices white bread",
+            "2 slices American cheese",
+            "1 roma (plum) tomato, thinly sliced",
+            "¼ small onion, chopped",
+            "1 jalapeno pepper, chopped"
+        ],
+        "preparationDescription": "<h1>Step 1</h1><p>Heat a large skillet over low heat. Spread butter or margarine onto one side of two slices of bread. Place both pieces buttered side down in the skillet. Lay a slice of cheese on each one, and top with slices of tomato, onion and jalapeno. Butter one side of the remaining slices of bread, and place on top buttered side up. When the bottom of the sandwiches are toasted, flip and fry until brown on the other side.</p>",
+        "preparationTime": 5,
+        "numberOfServings": 2
+    },
+    {
+        "_id":"5fefad08963719249d11ebf3",
+        "name": "Basic Italian Bean Soup",
+        "photo":"no-photo.jpg",
+        
+        "category":"5fefad08963719249d11ebf5",
+        "ingredients": [
+            "olive oil",
+            "1 large onion, diced",
+            "2 cloves garlic, or more to taste",
+            "2 cups tomato sauce",
+            "24 ounces prepared cannellini beans",
+            "1 tablespoon dried basil",
+            "½ teaspoon oregano",
+            "salt and ground black pepper to taste"
+        ],
+        "preparationDescription": "<h1>Step 1</h1><p>Heat olive oil in a pot over medium-high heat. Cook and stir onion in hot oil until tender, about 5 minutes; add garlic and continue cooking until fragrant, 1 to 2 minutes more.</p><h1>Step 2</h1><p>Pour tomato sauce into the pot; stir. Add cannelini beans, basil, oregano, salt, and pepper. Bring the mixture to a simmer, reduce heat to medium-low, and cook until the beans are hot, 5 to 7 minutes more.</p>",
+        "preparationTime": 25,
+        "numberOfServings": 4
+    },
+    {
+        "_id":"5fed96280cdee1b0ba8ac72c",
+        "name": "Thai Red Curry Chicken Soup",
+        "photo":"no-photo.jpg",
+        
+        "category":"5fefad08963719249d11ebf3",
+        "ingredients": [
+            "2 tablespoons red curry paste",
+            "1 red bell pepper, thinly sliced",
+            "1 small onion, chopped",
+            "1 (14 ounce) can coconut milk",
+            "1 tablespoon fish sauce",
+            "3 cups homemade chicken stock",
+            "2 cups shredded cooked chicken",
+            "1 ½ cups cooked basmati rice",
+            "4 tablespoons chopped fresh cilantro"
+        ],
+        "preparationDescription": "<h1>Step 1</h1><p>Cook curry paste in a large, heavy saucepan over medium-high heat until oils start to release, 1 to 2 minutes. Add red pepper and onion and cook, stirring, until softened, about 5 minutes. Stir in coconut milk until well blended. Add fish sauce, and then chicken stock.</p><h1>Step 2</h1><p>Reduce heat to low and simmer for 15 minutes. Add cooked chicken and rice. Stir over heat until warmed through. Add chopped cilantro right before serving.</p>",
         "preparationTime": 45,
-        "numberOfServings": 4,
-        "averageRating":5
+        "numberOfServings": 6
+    },
+    {
+        "_id":"5fed96280cdee1b0ba8ac72c",
+        "name": "All Kale Caesar",
+        "photo":"no-photo.jpg",        
+        "category":"5fefad08963719249d11ebf4",
+        "ingredients": [
+            "½ cup lemon juice",
+            "2 anchovy fillets",
+            "2 cloves garlic, peeled",
+            "½ teaspoon Dijon mustard",
+            "½ cup olive oil",
+            "¼ teaspoon salt",
+            "ground black pepper to taste",
+            "6 cups kale leaves",
+            "1 cup croutons",
+            "¼ cup grated Parmesan cheese"
+        ],
+        "preparationDescription": "<h1>Step 1</h1><p>Combine lemon juice, anchovies, garlic, and mustard in a blender or food processor fitted with a steel blade. Process until thoroughly combined. Pour in olive oil very gradually through the feed tube while machine is running, first 1 tablespoon at a time, then gradually increasing the amount. Season with salt and pepper.</p><h1>Step 2</h1><p>Stack and bunch the kale leaves together on a cutting board and cut across the stack into skinny slivers.</p><h1>Step 3</h1><p>Place the kale, croutons, and Parmesan cheese in the bowl and drizzle with about a 1/4 of the dressing. Toss and taste the salad and add more dressing if desired, then toss again.</p>",
+        "preparationTime": 15,
+        "numberOfServings": 4
     }
+    
 ]
