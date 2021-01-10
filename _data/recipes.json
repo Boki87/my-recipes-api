@@ -1,9 +1,8 @@
 [
-    {
-        "_id":"5fed96280cdee1b0ba8ac72c",
+    {        
         "name": "Turkish Eggs",
         "photo":"no-photo.jpg",
-        
+        "user":"5ffa24de0971e231b117d960",
         "category":"5fefad08963719249d11ebf5",
         "ingredients": [
             "1 cup Greek yogurt, at room temperature",
@@ -14,11 +13,10 @@
         "preparationTime": 25,
         "numberOfServings": 2
     },
-    {
-        "_id":"5fed96280cdee1b0ba8ac72c",
+    {        
         "name": "Blueberry Lemon Breakfast Quinoa",
         "photo":"no-photo.jpg",
-        
+        "user":"5ffa24de0971e231b117d960",
         "category":"5fefad08963719249d11ebf5",
         "ingredients": [
             "1 cup quinoa",
@@ -31,11 +29,10 @@
         "preparationTime": 5,
         "numberOfServings": 2
     },
-    {
-        "_id":"5fed96280cdee1b0ba8ac72c",
+    {        
         "name": "Spicy Grilled Cheese Sandwich",
         "photo":"no-photo.jpg",
-        
+        "user":"5ffa24de0971e231b117d960",
         "category":"5fefad08963719249d11ebf9",
         "ingredients": [
             "2 tablespoons butter or margarine",
@@ -49,11 +46,10 @@
         "preparationTime": 5,
         "numberOfServings": 2
     },
-    {
-        "_id":"5fefad08963719249d11ebf3",
+    {        
         "name": "Basic Italian Bean Soup",
         "photo":"no-photo.jpg",
-        
+        "user":"5ffa24de0971e231b117d960",
         "category":"5fefad08963719249d11ebf5",
         "ingredients": [
             "olive oil",
@@ -69,11 +65,10 @@
         "preparationTime": 25,
         "numberOfServings": 4
     },
-    {
-        "_id":"5fed96280cdee1b0ba8ac72c",
+    {        
         "name": "Thai Red Curry Chicken Soup",
         "photo":"no-photo.jpg",
-        
+        "user":"5ffa24de0971e231b117d960",
         "category":"5fefad08963719249d11ebf3",
         "ingredients": [
             "2 tablespoons red curry paste",
@@ -90,10 +85,10 @@
         "preparationTime": 45,
         "numberOfServings": 6
     },
-    {
-        "_id":"5fed96280cdee1b0ba8ac72c",
+    {        
         "name": "All Kale Caesar",
         "photo":"no-photo.jpg",        
+        "user":"5ffa24de0971e231b117d960",
         "category":"5fefad08963719249d11ebf4",
         "ingredients": [
             "½ cup lemon juice",

@@ -17,8 +17,8 @@ exports.addRating = asyncHandler(async (req, res, next) => {
     if(!recipe) {
         return next( new ErrorResponse(`No recipe found with id of: ${req.params.recipeId}`,404))        
     }    
-
-    const rating = Rating.create(req.body)
+    console.log({recipe:req.body.recipe, user:req.body.user});
+    const rating = await Rating.create(req.body)
 
     res.status(201).json({
         success: true,

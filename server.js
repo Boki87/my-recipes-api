@@ -1,4 +1,5 @@
 const path = require('path')
+const cors = require('cors')
 const express = require('express')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
@@ -23,6 +24,9 @@ const auth = require('./routes/auth')
 
 const app = express()
 
+//cors
+app.use(cors())
+
 // Body parser
 app.use(express.json())
 
@@ -46,6 +50,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 console.log(path.join(__dirname, 'public'));
 
 //mount routes
+
 app.use('/api/v1/recipes', recipes)
 app.use('/api/v1/categories', categories)
 app.use('/api/v1/auth', auth)
@@ -63,5 +68,5 @@ const server = app.listen(PORT, () => {
 process.on('unhandledRejection', (err, promise) => {
     console.log(`Error: ${err.message}`);
     //Close server and exit process
-    server.close(() => process.exit(1))
+    // server.close(() => process.exit(1))
 })

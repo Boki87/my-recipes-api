@@ -29,7 +29,7 @@ const RatingSchema = new mongoose.Schema({
 
 
 //prevent user from submitting more than one rating per recipe
-RatingSchema.index({recipe: 1, user: 1}, {unique: true})
+RatingSchema.index({ recipe: 1, user: 1 }, { unique: true });
 
 
 RatingSchema.statics.getAverageRating = async function(recipeId) {

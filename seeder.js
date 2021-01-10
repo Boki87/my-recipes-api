@@ -42,7 +42,7 @@ const importData = async () => {
 const deleteData = async () => {
     try {
         await Recipe.deleteMany()
-        // await Category.deleteMany()
+        await Category.deleteMany()
         console.log('Data deleted...');
         process.exit()
     } catch (err) {
