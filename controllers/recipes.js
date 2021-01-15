@@ -35,6 +35,9 @@ exports.getRecipes = asyncHandler(async (req, res, next) => {
         query = Recipe.find(JSON.parse(queryStr)).populate({
             path: 'category',
             select: 'name'
+        }).populate({
+            path: 'user',
+            select: 'name'
         }) //populate category path with name from the category document
 
         
@@ -102,7 +105,13 @@ exports.getRecipes = asyncHandler(async (req, res, next) => {
 // @access      Private
 exports.getRecipe = asyncHandler(async (req, res, next) => {
     
-        const recipe = await Recipe.findById(req.params.id)
+        const recipe = await (await Recipe.findById(req.params.id).populate({
+            path: 'category',
+            select: 'name'
+        }).populate({
+            path: 'user',
+            select: 'name'
+        }))
     
         if(!recipe) {
             return next(new ErrorResponse(`Recipe not found with id of ${req.params.id}`, 404)) //error when id does not exist 
