@@ -159,11 +159,11 @@ exports.updateRecipe = asyncHandler(async (req, res, next) => {
             return next(new ErrorResponse(`User ${req.user.id} is not authorized to update this recipe`, 401)) 
         }
 
-        recipe = await Recipe.findOneAndUpdate(req.params.id, req.body, {
+        recipe = await Recipe.findOneAndUpdate({_id: req.params.id}, req.body, {
             new: true,
             runValidators: true
         })
-
+        
         res.status(201).json({
             success: true,
             data: recipe
