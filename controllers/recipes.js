@@ -31,6 +31,16 @@ exports.getRecipes = asyncHandler(async (req, res, next) => {
         //create operators ($gt, $gte. $lt, etc), mongoose operators for (greater then, greater then and equal, etc)
         queryStr = queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g, match => `$${match}`)
 
+
+        
+
+        if(req.query.name) {
+            queryStr = JSON.parse(queryStr)
+            queryStr.name = { "$regex": req.query.name }
+            queryStr = JSON.stringify(queryStr)
+        }
+        
+        console.log(666, queryStr);
         // Find resource and populate category path with name from category model
         query = Recipe.find(JSON.parse(queryStr)).populate({
             path: 'category',
@@ -41,11 +51,12 @@ exports.getRecipes = asyncHandler(async (req, res, next) => {
         }) //populate category path with name from the category document
 
         
+        
+
 
         //Select fields, select only selected per resource from db
         if(req.query.select) {
-            const fields = req.query.select.split(',').join(' ')
-            console.log(fields);
+            const fields = req.query.select.split(',').join(' ')            
             query = query.select(fields)
         }
 
