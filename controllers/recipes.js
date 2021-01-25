@@ -71,8 +71,8 @@ exports.getRecipes = asyncHandler(async (req, res, next) => {
         }
 
         //pagination logic|query
-        const page = parseInt(req.query.page, 10) || 1 //default is 1
-        const limit = parseInt(req.query.limit, 10) || 10 //default to 10 resources per page
+        const page = parseInt(req.query.page, 8) || 1 //default is 1
+        const limit = parseInt(req.query.limit, 8) || 8 //default to 8 resources per page
         const startIndex = (page - 1) * limit
         const endIndex = page * limit
         const total = await Recipe.countDocuments()
@@ -84,16 +84,20 @@ exports.getRecipes = asyncHandler(async (req, res, next) => {
     
     
         //Pagination result
-        const pagination = {}
+        const pagination = {
+            total: Math.ceil(total / limit)
+        }
+        
 
         if(endIndex < total) {
+            
             pagination.next = {
                 page: page + 1,
                 limit
             }
         }
 
-        if(startIndex > 0) {
+        if(startIndex > 0) {            
             pagination.prev = {
                 page: page - 1,
                 limit
