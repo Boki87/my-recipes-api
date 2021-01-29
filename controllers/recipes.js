@@ -85,7 +85,7 @@ exports.getRecipes = asyncHandler(async (req, res, next) => {
     
         //Pagination result
         const pagination = {
-            total: Math.ceil(total / limit)
+            totalPages: Math.ceil(total / limit)
         }
         
 

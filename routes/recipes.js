@@ -11,6 +11,7 @@ const {protect} = require('../middleware/auth')
 
 router.use('/:recipeId/rating', ratingRouter)
 
+
 router.route('/:id/photo').put(recipeUploadPhoto)
 
 router
